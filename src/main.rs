@@ -21,7 +21,7 @@ fn main() {
 fn changes(pg: &str, ms: &str){
     let year = chrono::Utc::now().date().year();
     let month = chrono::Utc::now().date().month();
-    let to_match = contatinate_strings(year, month).to_owned();
+    let to_match = concatinate_strings(year, month).to_owned();
     for l in ms.lines().rev(){
         let indexes: Vec<&str>  = l.split(',').collect();
         let ms_bookdate = &indexes[24];
@@ -37,7 +37,7 @@ fn changes(pg: &str, ms: &str){
         }
     }
 
-fn contatinate_strings(v1: i32 , v2: u32 ) -> String {
+fn concatinate_strings(v1: i32 , v2: u32 ) -> String {
     let mut year = v1.to_string();
     let month = v2.to_string();
 
