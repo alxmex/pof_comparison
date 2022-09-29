@@ -49,7 +49,7 @@ fn concatinate_strings(v1: i32 , v2: u32 ) -> String {
 
 fn data_clean(data1: &[&str], data2: &[&str]) -> bool{
     match data1 == data2{
-        true => {true}
-        false => {false}
+        true => true
+        false => false
     }
 }
